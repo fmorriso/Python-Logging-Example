@@ -16,7 +16,7 @@ def main():
     start_logging()
     logger.debug('top')
     msg = f'Python version: {get_python_version()}'
-    print(msg)
+    logger.debug(msg)
     logger.info(msg)
     logger.debug('bottom')
 
