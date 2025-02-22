@@ -10,7 +10,7 @@ def start_logging():
     logger.remove()
     logger.add('formatted_log.txt', format = log_format, rotation = '1 MB', retention = '5 days')
     # Add a handler that logs only DEBUG messages to stdout
-    logger.add(sys.stdout, level = "DEBUG", filter = lambda record: record["level"].name == "DEBUG")
+    logger.add(sys.stdout, level = 'DEBUG', filter = lambda record: record["level"].name == "DEBUG")
 
 def main():
     start_logging()
